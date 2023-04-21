@@ -8,7 +8,7 @@ export abstract class CalculationStrategy {
 }
 
 export class Sub implements CalculationStrategy {
-    public readonly name: string = "вычитание"
+    public readonly name: string = "вычитание";
 
     public execute(context: DTO): number {
         const {x, y, total} = context;
@@ -22,7 +22,7 @@ export class Sub implements CalculationStrategy {
 }
 
 export class Division implements CalculationStrategy {
-    public readonly name: string = "деление"
+    public readonly name: string = "деление";
     
     public execute(context: DTO): number {
         const {x, y, total} = context;
@@ -36,7 +36,7 @@ export class Division implements CalculationStrategy {
 }
 
 export class Sum implements CalculationStrategy {
-    public readonly name: string = "сложение"
+    public readonly name: string = "сложение";
 
     public execute(context: DTO): number {
         const {x, y, total} = context;
@@ -50,7 +50,7 @@ export class Sum implements CalculationStrategy {
 }
 
 export class Multiply implements CalculationStrategy {
-    public readonly name: string = "умножение"
+    public readonly name: string = "умножение";
 
     public execute(context: DTO): number {
         const {x, y, total} = context;
